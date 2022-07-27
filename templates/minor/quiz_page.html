@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+        <style>
+            a{
+            color:whitesmoke;
+            text-decoration: bold;
+            }
+            #nav
+            {
+                background-color:#1f1920;
+            }
+            .carousel{
+            margin-top: 50px;
+            }
+            h3{
+            padding-bottom: 60px
+            }
+            h2{
+            padding: 25px;
+            box-sizing: border-box;
+            background-color: #1f1920;
+
+            }
+            button{
+  border: none;
+  color:white;
+  background-color: #1f1920;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+            }
+        </style>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>
+                <a href="#about">About</a></li>
+            </li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+			<!-- Features -->
+            <div class="wrapper style1">
+
+                <section id="features" class="container special">
+                    <header>
+                        <h2 style="color: aliceblue;">Let's Start with Quiz!</h2>
+
+
+                    </header>
+
+                    <!---Que1-->
+                    <h3>Que1. What would you prefer?</h3>
+                    <div class="row">
+                        <article class="col-4 col-12-mobile special">
+                         <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">1. Solve math problems.</button>
+                                    </a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                             <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">2. Help and guide others.</button>
+                                    </a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">3. Start or run a business.</button>
+                                </a></h3>
+                            </header>
+
+                        </article>
+                    </div>
+                </section>
+                <hr>
+
+                 <!---Que2-->
+                 <section id="features" class="container special">
+                    <h3>Que2. Create Art for sales and exhibition.</h3>
+                    <div class="row">
+                        <article class="col-4 col-12-mobile special">
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">1. Love it</button></a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">2. Dislike it</button></a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">3. Like it</button></a></h3>
+                            </header>
+                        </article>
+                    </div>
+                </section>
+                 <hr>
+
+                 <!---Que3--->
+                <section id="features" class="container special">
+                    <h3>Que3. Which activity you would like the most?</h3>
+                    <div class="row">
+                        <article class="col-4 col-12-mobile special">
+                            <a href="#Commerce" class="image featured"><img src="{% static 'images/que2-2.jpg' %}" alt="" /></a>
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">1. Research Job</button></a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                            <a href="#Arts" class="image featured"><img src="{% static 'images/que2-3.png' %}" alt="" /></a>
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">2. Construction and Engineering</button></a></h3>
+                            </header>
+                        </article>
+                        <article class="col-4 col-12-mobile special">
+                            <a href="#Science" class="image featured"><img src="{% static 'images/que2-4.jpg' %}" alt="" /></a>
+                            <header>
+                                <h3><a href="{% url 'branch-list' %}"><button type="button">3. Creative Photography</button></a></h3>
+                            </header>
+                        </article>
+                    </div>
+                </section>
+                <hr>
+
+            </div>
+
+
+<!-- Footer -->
+<div id="footer">
+    <div class="row">
+        <div class="col-12">
+            <!-- Contact -->
+            <section id="Contact">
+                <center>
+                    <header>
+                        <h3>Be a part of our journey!</h3>
+                    </header>
+
+                    <center><h6>Best of all for the future!</h6></center>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                    </ul>
+                </center>
+                </section>
+
+            <!-- Copyright -->
+                <div class="copyright">
+                    <ul class="menu">
+                        <li>&copy; Untitled. All rights reserved.</li><li>Design:Group4</a></li>
+                    </ul>
+                </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+            <script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+</section>
+</body>
+</html>

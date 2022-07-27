@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+        <style>
+            a{
+            color:whitesmoke; 
+            text-decoration: bold;
+            }
+            #nav
+            {
+                background-color:#1f1920;
+            }
+            .carousel{
+            margin-top: 50px;
+            }
+            h2{
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>
+                <a href="#banner">About</a></li>
+            </li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+<!-- Carousel -->
+<section class="carousel">
+    <h2>Check Out these Courses We Found For You!</h2>
+    <div class="reel">
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/BTECH.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">BTech-Bachelor of Technology</a></h3>
+            </header>
+            <p>B.Tech. ( Bachelor in Technology) is a graduate level program. You can do this course after passing the 12th class exams. 
+
+            </p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/BCA.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">BCA</a></h3>
+            </header>
+            <p>Bachelors in Computer Application (BCA) is a three-year undergraduate degree course for students who wish to delve into the world of Computer languages.</p>
+        </article>
+   
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/Arch.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">B.Arch-Architecture</a></h3>
+            </header>
+            <p>B.Arch is an undergraduate degree in the field of architecture. This five-year full-time programme is a blend of theorical and practical knowledge for students to learn the art of planning, designing and constructing physical structures.</p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/Pharamcy.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">B-Bachelor of Pharamcy</a></h3>
+            </header>
+            <p>B. Pharm is a 3 years long undergraduate course. After completing the course, graduates will obtain the 'Bachelor of Pharmacy' degree. After obtaining this degree, graduates may start practice as a Pharmacist in India as well as abroad.</p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/BTECH.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">BE - Bachelor of Technology</a></h3>
+            </header>
+            <p>BE is a graduate level program done directly after a student's 12th exam, the candidate has to appear for any state or national level engineering entrance to get admittance into an engineering college. The course of this degree focuses on theoretical knowledge needed to innovate technology.</p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/Nursing.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="#">B.Sc - Nursing</a></h3>
+            </header>
+            <p>B.Sc. Nursing is an undergraduate medical programme. Nursing education is monitored by the Indian Nursing Council (INC). The B.Sc. Nursing curriculum focuses on teaching students how to care for patients so as to “attain optimum health for all members of society.” </p>
+        </article>
+
+        
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/BCA.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">B.Sc - Information Technology</a></h3>
+            </header>
+            <p>
+                BSc (Bachelor of Science) in IT is basically about storing, processing, securing, and managing information. This degree is primarily focused on subjects such as software, databases, and networking.
+                </p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/Physics.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">B.Sc - Physics</a></h3>
+            </header>
+            <p>BSc physics is a three-year undergraduate course that deals with the fundamentals of physics. </p>
+        </article>
+
+        <article>
+            <a href="{% url 'college-list' %}" class="image featured"><img src="{% static 'images/Interior.jpg' %}" alt="" /></a>
+            <header>
+                <h3><a href="{% url 'college-list' %}">B.Sc - Interior Design</a></h3>
+            </header>
+            <p>It is a 3 year undergraduate course where students learn to design comfortable spaces and deal with the planning and designing.</p>
+        </article>
+    </div>
+
+    <!-- Banner (About)-->
+    <section id="banner">
+        <header>
+            <h2>Hi, You're looking at <strong>i-Dream</strong>.</h2>
+            <span style="text-align: justify; color:#1f1920;">
+                <b>I-dream is an extensive search engine for the students who are seeking 
+                information on higher education sector in India. One can rely on i-dream
+                for getting brief and relevant data on colleges, courses and universities. 
+                Our website is a repository of reliable and authentic information. 
+                We offer specific information for students of 10th and higher. 
+                Education seekers get a personalised experience on our site,
+                based on educational background and career interest, enabling them 
+                to make well informed course and college decisions. The decision making is 
+                empowered with easy access to detailed information on career choices, courses,
+                exams, colleges, admission criteria, eligibility, fees, placement statistics,
+                srankings, reviews, scholarships, latest updates etc . 
+            </b>
+            </span>
+        </header>
+    </section>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="row">
+        <div class="col-12">
+            <!-- Contact -->
+            <section id="Contact">
+                <center>
+                    <header>
+                        <h3>Be a part of our journey!</h3>
+                    </header>
+                
+                    <center><h6>Best of all for the future!</h6></center>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                    </ul>
+                </center>
+                </section>
+                <script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

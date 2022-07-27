@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+		<style>
+            a{
+            color:whitesmoke;
+            text-decoration: bold;
+            }
+            #nav
+            {
+                background-color:#1f1920;
+            }
+            .carousel{
+            margin-top: 50px;
+            }
+            h2{
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+        </style>
+	</head>
+<body>
+ <!-- Nav -->
+ <nav id="nav">
+    <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li>
+            <a href="#banner">About</a></li>
+        </li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Features -->
+<div class="wrapper style1">
+
+    <section id="features" class="container special">
+        <header>
+            <h2>Top Recommended Colleges for you.</h2>
+        </header>
+        <div class="row">
+            <article class="col-4 col-12-mobile special">
+                <a href="https://aitr.ac.in/" class="image featured"><img src="{% static 'images/Acropolis.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://aitr.ac.in/">Acropolis Institue of Technology and Research</a></h3>
+                </header>
+                <p>
+                    Acropolis Institute of Technology and Research is a private engineering college located in Indore,
+                     Madhya Pradesh, India. It was established in 2005. Acropolis Institute of Technology and Research - AITR offers bachelor's and master's degrees in engineering and master's degrees in computing and management.
+                </p>
+            </article>
+            <article class="col-4 col-12-mobile special">
+                <a href="https://www.sgsits.ac.in/" class="image featured"><img src="{% static 'images/Sgsits.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://www.sgsits.ac.in/">Shri Govindram Seksaria Institute of Technology and Science</a></h3>
+                </header>
+                <p>
+                    The Shri Govindram Seksaria Institute of Technology and Science (SGSITS), formerly Govindram Seksaria Technological Institute (GSTI) is a college funded by the state government of Madhya Pradesh and is located in Indore, India. It was established in 1952 as a technical institute offering licentiate and diploma courses in engineering.
+
+                </p>
+            </article>
+            <article class="col-4 col-12-mobile special">
+                <a href="https://www.medicaps.ac.in/" class="image featured"><img src="{% static 'images/MediCaps.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://www.medicaps.ac.in/">Medicaps</a></h3>
+                </header>
+                <p>
+                    <br>
+            Medi-Caps is a private university in the state of Madhya Pradesh in India, founded in 2000. The university offers engineering and management degrees.
+         Since its inception in July 2000, Medi-Caps has consistently aimed at creating an ideal ambiance for budding technocrats and managers; and helping them to grow like true professionals.
+                </p>
+            </article>
+            <article class="col-4 col-12-mobile special">
+                <a href="https://svvvadmission.mastersofterp.in/" class="image featured"><img src="{% static 'images/vaishnav.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://svvvadmission.mastersofterp.in/">Shri Vaishnav VIidyapeeth Vishwavidyalaya</a></h3>
+                </header>
+                <p>
+            Shri Vaishnav Vidyapeeth Vishwavidyalaya is a private university established under Madhya Pradesh Niji Vishwavidyalaya (Sthapana Avam Sanchalan) Adhiniyam in 2015 at Indore MP(India).
+            Shri Vaishnav Institute of Technology and Science is approved by AICTE and Govt. of Madhya Pradesh and is affiliated Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal and Devi Ahilya Vishwavidyalaya, Indore for MBA. SVITS is imparting quality education to the students and thus shaping their future.
+                </p>
+            </article>
+
+            <article class="col-4 col-12-mobile special">
+                <a href="https://www.dauniv.ac.in/" class="image featured"><img src="{% static 'images/DAVV.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://www.dauniv.ac.in/"> Devi Ahilya Vhishwavidyalya , Indore</a></h3>
+                </header>
+                <p>
+                    <br>
+                    Devi Ahilya University (informally abbreviated DAVV), formerly Indore University, is a State University whose jurisdiction was initially restricted to Indore city. Later on, its jurisdiction was extended to seven tribal-dominated districts of Indore division namely, Jhabua, Alirajpur, Dhar, Khargone, Khandwa, Burhanpur and Barwani. It is thus catering to the educational needs of the most industrially developed district of Madhya Pradesh, Indore on one hand and to the seven tribal and rural backward districts of the State on the other.
+
+                </p>
+            </article>
+            <article class="col-4 col-12-mobile special">
+                <a href="https://www.ipsacademy.org/"  class="image featured"><img src="{% static 'images/IPS.jpeg' %}" alt="" /></a>
+                <header>
+                    <h3><a href="https://www.ipsacademy.org/"> Institute Of Engineering & Science IPS Academy </a></h3>
+                </header>
+                <p>
+                Institute Of Engineering & Science IPS Academy Indore is an Autonomous engineering education institution under UGC guidelines, located at Indore city beside NH-3 in Madhya pradesh state, India.
+                It was established in Indore on 19 October 1999 after securing approval of the All India Council for Technical Education, New Delhi, and Government of Madhya Pradesh to commence in the 1999–2000 academic year. It ranks among the top 45 private engineering institutions in India.[1]
+                </p>
+            </article>
+        </div>
+    </section>
+
+</div>
+
+<!-- Banner (About)-->
+<section id="banner">
+    <header>
+        <h2>Hi, You're looking at <strong>i-Dream</strong>.</h2>
+        <span style="text-align: justify; color:#1f1920;">
+            <b>I-dream is an extensive search engine for the students who are seeking
+            information on higher education sector in India. One can rely on i-dream
+            for getting brief and relevant data on colleges, courses and universities.
+            Our website is a repository of reliable and authentic information.
+            We offer specific information for students of 10th and higher.
+            Education seekers get a personalised experience on our site,
+            based on educational background and career interest, enabling them
+            to make well informed course and college decisions. The decision making is
+            empowered with easy access to detailed information on career choices, courses,
+            exams, colleges, admission criteria, eligibility, fees, placement statistics,
+            srankings, reviews, scholarships, latest updates etc .
+        </b>
+        </span>
+    </header>
+</section>
+
+			<!-- Footer -->
+            <div id="footer">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Contact -->
+                        <section id="Contact">
+                            <center>
+                                <header>
+                                    <h3>Be a part of our journey!</h3>
+                                </header>
+
+                                <center><h6>Best of all for the future!</h6></center>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+                                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                </ul>
+                            </center>
+                            </section>
+
+                        <!-- Copyright -->
+                            <div class="copyright">
+                                <ul class="menu">
+                                    <li>&copy; Untitled. All rights reserved.</li><li>Design:Group4</a></li>
+                                </ul>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</div>
+
+<!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
