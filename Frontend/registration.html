@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            a{
+            color:whitesmoke; 
+            text-decoration: bold;
+            }
+            #nav
+            {
+                background-color:#1f1920;
+            }
+            .container{
+                margin-top: 100px;;
+            }
+
+              
+    form {
+        border: 3px solid #f1f1f1;
+    }
+    /*assign full width inputs*/
+      
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    /*set a style for the buttons*/
+      
+    button {
+        background-color: #1f1920;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* set a hover effect for the button*/
+      
+    button:hover {
+        opacity: 0.8;
+    }
+    /*set extra style for the cancel button*/
+      
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    /*centre the display image inside the container*/
+      
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    /*set image properties*/
+      
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    /*set padding to the container*/
+      
+    .container {
+        padding: 16px;
+    }
+    /*set the forgot password text*/
+      
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    /*set styles for span and cancel button on small screens*/
+      
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+		</style>
+</head>
+
+<body >
+    <div id="page-wrapper">
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="#banner">About</a></li>
+                            </li>
+                            <li><a href="#Contact">Contact</a></li>
+                        
+                        </ul>
+                    </nav>
+
+                    
+                    <!--Step 1 : Adding HTML-->
+                    <form action="/action_page.php">
+                        <div class="container">
+                         <center><h3>Registration Form</h3></center>
+                            <label><b>Firstname</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label><b>Secondname</b></label>
+                            <input type="text" placeholder="Enter Username" name="sname" required>
+                            <label><b>Date of Birth</b></label>
+                            <input type="text" placeholder="Enter DOB" name="dob" required>
+                            <label><b>Phone No.</b></label>
+                            <input type="number" placeholder="Enter Phone no" name="no" required>
+                            <label><b>Email Id</b></label>
+                            <input type="email" placeholder="Enter Email Id" name="email" required>
+                           <label><b>Percentage</b></label>
+                            <input type="number" placeholder="Enter Percentage" name="percentage" required>
+
+                            <label><b>City</b></label>
+                            <input type="text" placeholder="Enter City" name="city" required>
+                            <label><b>State</b></label>
+                            <input type="text" placeholder="Enter State" name="state" required>
+                            
+                            <p style="font-size : 20px;">Select Gender</p>
+                            <input style="height: 20px;width: 60px; color: black" checked type="radio" id="male" value="male" name="gender">Male
+                            <input style="height: 20px; width: 60px; color: black" type="radio" id="female" value="female" name="gender">Female
+                  
+                            <button type="submit">Register</button>
+                            <a style="font-size: 20px;color:red;text-decoration:none;" href="login.html">
+                                Already Registered? Login Here</a>
+                        </div>
+                  
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                  
+        
+			<!-- Banner (About)-->
+				<section id="banner">
+					<header>
+						<h2>Hi, You're looking at <strong>i-Dream</strong>.</h2>
+						<span style="text-align: justify; color:#1f1920;">
+							<b>I-dream is an extensive search engine for the students who are seeking 
+							information on higher education sector in India. One can rely on i-dream
+							for getting brief and relevant data on colleges, courses and universities. 
+							Our website is a repository of reliable and authentic information. 
+							We offer specific information for students of 10th and higher. 
+							Education seekers get a personalised experience on our site,
+							based on educational background and career interest, enabling them 
+						    to make well informed course and college decisions. The decision making is 
+							empowered with easy access to detailed information on career choices, courses,
+							exams, colleges, admission criteria, eligibility, fees, placement statistics,
+							srankings, reviews, scholarships, latest updates etc . 
+						</b>
+						</span>
+					</header>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+						<div class="row">
+							<div class="col-12">
+								<!-- Contact -->
+								<section id="Contact">
+									<center>
+										<header>
+											<h3>Be a part of our journey!</h3>
+										</header>
+									
+										<center><h6>Best of luck for the future!</h6></center>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</center>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design:Group4</a></li>
+										</ul>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
